@@ -1,0 +1,52 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* App container that centers content and keeps a readable width */
+.app-container {
+  /* don't force full viewport centering; keep content nearer the top */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background: #242425; /* soft background */
+}
+
+.app-inner {
+  width: 100%;
+  max-width: 760px;
+  /* use a soft non-white background and ensure text color is dark for readability */
+  background: #eef3f7; /* pale blue-gray, not pure white */
+  color: #0f172a; /* dark text for readability */
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  padding: 0.9rem 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+nav a {
+  color: #0f172a; /* dark text */
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #eef2ff;
+}
+
+/* Generic tidy form styles used across the app */
+.form-row { margin-bottom: 10px; }
+.form-row input,
+textarea { width: 100%; padding: 8px 10px; border: 1px solid #e5e7eb; border-radius: 6px; }
+.form-actions { display:flex; justify-content:flex-end; }
+.btn { padding:8px 12px; background:#1e40af; color:white; border-radius:6px; border:none; cursor:pointer; }
+.error { color:#b91c1c; margin-top:6px; }
